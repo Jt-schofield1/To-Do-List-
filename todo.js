@@ -21,6 +21,12 @@ function addTask(){ // function is called in HTML
     saveData(); // call the function to save the data to the local storage
 
 }
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") { // Check if the key pressed is "Enter"
+        addTask(); // Call your existing function
+    }
+});
+
 
 
 listContainer.addEventListener("click", function(e){ // event listener for the list container 
