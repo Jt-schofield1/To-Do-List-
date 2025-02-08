@@ -24,6 +24,7 @@ function addTask(){ // function is called in HTML
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") { // Check if the key pressed is "Enter"
         addTask(); // Call your existing function
+        saveData();
     }
 });
 
